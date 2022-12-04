@@ -22,6 +22,8 @@ from rest_framework import permissions
 from drf_spectacular.views import SpectacularJSONAPIView, SpectacularSwaggerView
 
 urlpatterns = [
+    path('jet/', include('jet.urls', 'jet')),  # Django JET URLS
+    path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
     path("", include("home.urls")),
     path("accounts/", include("allauth.urls")),
     path("modules/", include("modules.urls")),
