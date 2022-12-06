@@ -8,7 +8,7 @@ const AddBankAccount = () => {
   const [routingNumber, setRoutingNumber] = useState("");
   useEffect(() => {
     setUser({
-      name: "Username",
+      name: "shah",
       email: "username@email.com",
       image: require("./assets/profilePicture.png")
     });
